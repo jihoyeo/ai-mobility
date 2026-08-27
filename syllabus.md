@@ -88,7 +88,7 @@ LLM·RAG·AI 에이전트는 별도 신설 과목에서 다룬다. → [CURRICUL
 | 교재 | 담당 파트 | 사용 챕터 |
 |---|---|---|
 | Géron, [**핸즈온 머신러닝 3판**](https://www.hanbit.co.kr/store/books/look.php?p_code=B1539397165) | 기계학습 (3~5주차) | Ch1, Ch2, Ch3(발췌), Ch4, Ch6, Ch7 · Ch18(14주차 발췌) |
-| 사이토 고키, [**밑바닥부터 시작하는 딥러닝**](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198) | 딥러닝 (6~7, 10~11주차) | Ch2, Ch3, Ch4, Ch5, Ch6, Ch7, Ch8 (Ch1은 자습) |
+| 사이토 고키, **밑바닥부터 시작하는 딥러닝 1** (리마스터판, 한빛미디어 2025) | 딥러닝 (6~7, 10~11주차) | Ch2, Ch3, Ch4, Ch5, Ch6, Ch7, Ch8 (Ch1은 자습) |
 
 챕터별 선정 이유와 배치는 → [schedule.md](schedule.md#교재별-사용-챕터)
 
