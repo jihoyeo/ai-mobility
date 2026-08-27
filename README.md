@@ -7,13 +7,15 @@
 | 담당 | 여지호 (jihoyeo@gachon.ac.kr) |
 | 강의 시간 | 화 15:00–16:50 / 수 12:00–12:50 |
 | 강의실 | 210호 |
-| 운영 기간 | 15주 (2026-09-01 ~ 2026-12-01) |
+| 운영 기간 | 15주 (2026-09-01 ~ 2026-12-08) |
 | 오피스 아워 | 수 17:00–20:00 |
+| 성격 | 모빌리티 트랙 **입문 과목** — 3학년 [스마트 교통물류](https://github.com/jihoyeo/smart-transport-logistics)로 이어짐 |
 
 ## 문서
 
 - [강의계획서 (syllabus.md)](syllabus.md)
 - [주차별 일정 (schedule.md)](schedule.md)
+- [교육과정 설계 메모 (CURRICULUM.md)](CURRICULUM.md)
 
 ## 디렉터리
 
