@@ -1,5 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# 저작권 자료 — 커밋 금지 (교재 PDF 등)
+reference/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
