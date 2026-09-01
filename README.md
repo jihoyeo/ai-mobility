@@ -11,17 +11,17 @@
 | 오피스 아워 | 수 17:00–20:00 |
 | 성격 | 모빌리티 트랙 **입문 과목** — 3학년 [스마트 교통물류](https://github.com/jihoyeo/smart-transport-logistics)로 이어짐 |
 
-ML·DL을 기초부터 쌓아 교통 문제(수요예측·ETA·강화학습)에 적용하는 입문 과목.
-주교재는 **핸즈온 머신러닝 3판**(60,000원, ML)과 **밑바닥부터 시작하는 딥러닝 1**(26,000원, DL)
-두 권으로, 모두 구매 필수다. 핸즈온은 3학년 「스마트 교통물류」 부교재이기도 해 2년간 사용한다.
+정형 데이터 기반 기계학습·딥러닝과 Attention·Transformer를 학습하고,
+서울시 BIS 데이터를 활용한 노선별 버스 ETA 예측에 적용하는 과목.
 
 ```
 1~2주   모빌리티 데이터와 실습 환경
 3~5주   ML   — 핸즈온 머신러닝 3판 1권 (Ch1,2,3발췌,4,6,7)
 6~7주   DL   — 밑바닥부터 시작하는 딥러닝 (Ch2~5)
  8주    휴강 / 9주 중간고사
-10~11주 DL   — 밑바닥부터 시작하는 딥러닝 (Ch6~8)
-12~14주 Application — Demand Prediction · ETA · RL(밑바닥 4권 발췌)
+10주    DL   — 밑바닥부터 시작하는 딥러닝 Ch6 · PyTorch
+11~12주 Transformer — Attention · 시계열 모델링
+13~14주 Application — 노선별 버스 ETA · 팀 프로젝트
  15주   팀 프로젝트 발표
 ```
 
@@ -30,6 +30,7 @@ ML·DL을 기초부터 쌓아 교통 문제(수요예측·ETA·강화학습)에 
 - [강의계획서 (syllabus.md)](syllabus.md)
 - [주차별 일정 (schedule.md)](schedule.md)
 - [교육과정 설계 메모 (CURRICULUM.md)](CURRICULUM.md)
+- [핸즈온 머신러닝 강의노트](materials/handson-ml/README.md)
 
 ## 디렉터리
 
