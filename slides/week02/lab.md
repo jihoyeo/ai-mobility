@@ -2,79 +2,74 @@
 course: AI 모빌리티 · 가천대학교 스마트시티학과
 week: 2주차 실습
 title: 개발 환경과 AI 코딩 도구
-subtitle: 설치, 첫 실행, 결과 확인
+subtitle: 설치하고, 실행하고, 결과 확인하기
 presenter: 여지호 교수 · 스마트시티학과
 date: 2026년 9월 9일 (수)
 contact: jihoyeo@gachon.ac.kr · 오피스 아워 수 17:00–20:00
 footer: AI 모빌리티 · 2026 가을학기
 closing: 다음 주 실습에서 이어서
-closing_sub: End-to-End 프로젝트 노트북 (핸즈온 Ch2)
+closing_sub: 핸즈온 Ch2 주택 가격 예제
 toc: true
 toc_label: Week 02 Lab
 ---
 
 <!-- 덱 설계
-청중: 2주차 화요일 이론(핸즈온 Ch1)을 마친 2학년. 파이썬 숙련도 혼재, 설치 경험 없는 학생 다수
-시간: 수 실습 50분 → 본문 6장. 설명은 짧게, 대부분의 시간을 설치와 확인에 쓴다
-메시지: 코드를 쓰는 시간보다 결과를 확인하는 시간이 길어지는 것이 정상이다
-목표: (1) 두 도구를 설치하고 로그인한다 (2) pandas로 데이터를 읽고 요약한다 (3) AI가 만든 코드에서 확인할 세 가지를 익힌다
-출처: schedule.md 실습 환경 · 교재 주택 데이터(핸즈온 Ch2에서 사용)
-제외: 파이썬 문법 강의, 실습 데이터 소개(5주차)
+시간: 50분
+원칙: 설명보다 설치와 실행에 시간을 쓴다. 설치가 어려우면 Google Colab으로 바로 전환한다.
 -->
 
 # 오늘 할 일
 
-## 실습 순서
-- GitHub 계정 생성 — 과제 제출에도 사용
-- Antigravity 설치와 로그인 (Google 계정)
-- Codex 설치와 로그인 — 막히면 웹 버전
-- pandas 첫 실행 — 3주차에 쓸 교재 데이터
-> 50분. 설치에서 막히는 학생이 반드시 나오므로 순서대로 확인하며 진행한다.
+## 순서
 
-# 도구
+1. GitHub 계정 확인
+2. Antigravity 설치와 로그인
+3. Codex 설치와 로그인
+4. 교재 데이터 읽기
 
-## 사용할 도구
-- 에디터: Google Antigravity — VS Code 기반, 에이전트 내장
-- 코딩 에이전트: OpenAI Codex — 터미널과 웹에서 사용
-- 대비책: Google Colab — 설치 없이 브라우저에서 실행
-- 분석: Python, pandas, scikit-learn
-> 셋 다 무료 플랜으로 시작. 한도가 자주 바뀌므로 과제는 한도를 전제하지 않는다.
+> 한 단계씩 함께 진행하고 완료 여부를 확인합니다.
 
-## 파이썬 문법 학습 방식
-- 별도 문법 강의 없음 — 필요한 시점에 도구로 해결
-- 확보한 시간은 결과를 확인하는 훈련에 배분
-- 배열 연산은 6주차 신경망 구현에서 별도 설명
-> 파이썬이 처음인 학생도 오늘부터 바로 시작할 수 있게 한다.
+## 사용할 환경
+
+- 편집기: Google Antigravity
+- 코딩 도구: OpenAI Codex
+- 실행 환경: 로컬 Python 또는 Google Colab
+- 패키지: pandas·NumPy·scikit-learn
+
+> 로컬 설치 문제를 오늘 모두 해결하려고 시간을 쓰지 않습니다. 실행이 안 되면 Colab에서 수업을 계속합니다.
 
 # 첫 실행
 
-## pandas로 데이터 읽기
-- 3주차 End-to-End에서 쓸 교재 데이터로 미리 연습
+## 교재의 주택 데이터 읽기
 
 ```python
 import pandas as pd
 
 base = "https://raw.githubusercontent.com/ageron/data/main"
-df = pd.read_csv(f"{base}/housing/housing.csv")
+housing = pd.read_csv(f"{base}/housing/housing.csv")
 
-print(df.shape)                          # (결과) (20640, 10)
-print(df["median_house_value"].mean())   # (결과) 206855.82
-print(df.isna().sum().sum())             # (결과) 207
+housing.info()
+housing.head()
+housing.describe()
 ```
-> 두 도구에 같은 요청을 넣고 결과가 같은지 본다. 값이 다르면 그 자리에서 원인을 찾는다.
 
-## AI 코드 확인 항목
-- 행 수: 읽어들인 결과가 원본과 일치하는가
-- 결측: 삭제인지 대체인지, 대체면 어떤 값인지
-- 필터: 조건이 의도한 범위와 일치하는가
-- 확인 없이 넘어간 코드가 오차의 출처
-> 코드를 쓰는 시간보다 확인하는 시간이 길어지는 것이 정상이다.
+> 다음 주 Ch2에서 사용할 데이터입니다. 교재 노트북과 같은 순서로 크기, 열, 결측값, 요약 통계를 확인합니다.
+
+## 실행 뒤 확인할 것
+
+- 20,640행인가?
+- 열은 10개인가?
+- `total_bedrooms`의 결측값은 몇 개인가?
+- 범주형 열은 무엇인가?
+
+> AI가 만든 코드도 이 질문에 답할 수 있어야 합니다. 실행에 성공했다는 사실만으로 맞는 코드라고 판단하지 않습니다.
 
 # 마무리
 
-## 오늘 확인할 것
-- 세 패키지 import 성공 — pandas, numpy, scikit-learn
-- 데이터 20,640행을 읽고 요약 통계 출력
-- 두 도구 모두에서 같은 결과 확인
-- 결측 207개를 어떻게 처리할지 도구에 물어보기
-> 막힌 학생은 Colab으로 전환하고 다음 주까지 로컬 환경을 정리한다.
+## 다음 주 준비
+
+- 세 패키지가 오류 없이 불러와지는지 확인
+- 핸즈온 Ch2 읽기
+- 공식 Ch2 노트북 열어 보기
+
+> 다음 실습부터는 교재의 `02_end_to_end_machine_learning_project.ipynb`를 함께 실행합니다.

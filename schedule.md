@@ -106,8 +106,8 @@ HW2에서 전체 데이터를 다룬다.
 
 - [2주차 — 머신러닝 개요](materials/handson-ml/week02_ch01.md)
 - [3주차 — 머신러닝 프로젝트 처음부터 끝까지](materials/handson-ml/week03_ch02.md)
-- [4주차 — 분류 평가와 모델 훈련](materials/handson-ml/week04_ch03_ch04.md)
-- [5주차 — 결정 트리와 앙상블 학습](materials/handson-ml/week05_ch06_ch07.md)
+- [4주차 — 분류](materials/handson-ml/week04_ch03.md) · [모델 훈련](materials/handson-ml/week04_ch04.md)
+- [5주차 — 결정 트리](materials/handson-ml/week05_ch06.md) · [앙상블 학습과 랜덤 포레스트](materials/handson-ml/week05_ch07.md)
 
 ### 핸즈온 머신러닝 3판 (Géron) — ML 파트, 2~5주차
 

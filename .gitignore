@@ -3,6 +3,10 @@ Thumbs.db
 
 # 저작권 자료 — 커밋 금지 (교재 PDF 등)
 reference/
+materials/*.pdf
+materials/**/*.pdf
+*.pdf
+
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
