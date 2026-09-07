@@ -1,0 +1,1080 @@
+{
+ "version": 1,
+ "markdown": "deck.md",
+ "pptx": "AI모빌리티_02_머신러닝개요.pptx",
+ "md_sha256": "2810a4aa34c9a12602a3ad76ba9a3c31d82e4beb0b0596e0f5a06464b9f6d905",
+ "pptx_sha256": "505d701c579aba62d9748589f5053296ad4ef0268f5cc8b800d03ccd8119195c",
+ "slide_count": 24,
+ "slides": [
+  {
+   "index": 0,
+   "kind": "표지",
+   "fields": [
+    {
+     "role": "meta",
+     "key": "course",
+     "ph": 100,
+     "text": "AI 모빌리티 · 가천대학교 스마트시티학과",
+     "line": 1
+    },
+    {
+     "role": "meta",
+     "key": "week",
+     "ph": 101,
+     "text": "2주차",
+     "line": 2
+    },
+    {
+     "role": "meta",
+     "key": "title",
+     "ph": 102,
+     "text": "머신러닝 개요",
+     "line": 3
+    },
+    {
+     "role": "meta",
+     "key": "subtitle",
+     "ph": 103,
+     "text": "핸즈온 Ch1 — 시스템의 종류, 과대적합, 검증",
+     "line": 4
+    },
+    {
+     "role": "meta",
+     "key": "presenter",
+     "ph": 104,
+     "text": "여지호 교수 · 스마트시티학과",
+     "line": 5
+    },
+    {
+     "role": "meta",
+     "key": "date",
+     "ph": 105,
+     "text": "2026년 9월 8일 (화)",
+     "line": 6
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "kind": "목차",
+   "fields": []
+  },
+  {
+   "index": 2,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "머신러닝이란",
+     "line": 24,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "kind": "본문+표",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "1.1 오늘의 범위",
+     "line": 26,
+     "prefix": "1.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "핸즈온 머신러닝 3판 1장 전체",
+       "level": 0,
+       "line": 27
+      },
+      {
+       "text": "코드보다 용어와 판단 기준이 중심",
+       "level": 0,
+       "line": 28
+      }
+     ]
+    },
+    {
+     "role": "tcaption",
+     "ph": 103,
+     "text": "표 1. 오늘 다루는 교재 절",
+     "line": 30,
+     "prefix": "표 1. ",
+     "marker": "표: "
+    },
+    {
+     "role": "table",
+     "ph": 104,
+     "rows": [
+      {
+       "cells": [
+        "교재 절",
+        "내용"
+       ],
+       "line": 31
+      },
+      {
+       "cells": [
+        "1.1~1.3",
+        "정의, 사용 이유, 응용 사례"
+       ],
+       "line": 33
+      },
+      {
+       "cells": [
+        "1.4",
+        "시스템의 종류 — 세 축"
+       ],
+       "line": 34
+      },
+      {
+       "cells": [
+        "1.5",
+        "주요 도전 과제"
+       ],
+       "line": 35
+      },
+      {
+       "cells": [
+        "1.6",
+        "테스트와 검증"
+       ],
+       "line": 36
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "1.7 연습문제는 다루지 않는다. 수요일 실습은 개발 환경 세팅으로 따로 진행한다.",
+       "line": 37
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "1.2 머신러닝의 정의",
+     "line": 39,
+     "prefix": "1.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "데이터에서 학습하도록 컴퓨터를 프로그래밍하는 방법",
+       "level": 0,
+       "line": 40
+      },
+      {
+       "text": "미첼(1997) — 경험 E로 작업 T의 성능 P가 향상되면 학습",
+       "level": 0,
+       "line": 41
+      },
+      {
+       "text": "예: T 도착시간 예측, E 과거 운행 기록, P 평균 오차",
+       "level": 1,
+       "line": 42
+      },
+      {
+       "text": "데이터 보유와 학습은 다름 — 기준은 성능 P의 향상",
+       "level": 0,
+       "line": 43
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "학생에게 버스 도착시간 예측을 T·E·P에 대입해 보게 한다.",
+       "line": 44
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "1.3 규칙 기반의 한계",
+     "line": 46,
+     "prefix": "1.3 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "규칙 기반: 사람이 조건을 나열 — 조건이 늘수록 유지보수 비용 증가",
+       "level": 0,
+       "line": 47
+      },
+      {
+       "text": "시간대 평균 → 요일 추가 → 도로 등급 추가 → 강우 추가",
+       "level": 1,
+       "line": 48
+      },
+      {
+       "text": "머신러닝: 패턴을 데이터에서 찾고 새 데이터에 적응",
+       "level": 0,
+       "line": 49
+      },
+      {
+       "text": "규칙 작성 루프가 데이터·훈련·평가 루프로 대체",
+       "level": 0,
+       "line": 50
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "두 루프를 판서로 나란히 그린다. 교재 그림 1-2와 1-3.",
+       "line": 51
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "1.4 머신러닝이 유리한 경우",
+     "line": 53,
+     "prefix": "1.4 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "규칙이 길고 계속 늘어나는 문제",
+       "level": 0,
+       "line": 54
+      },
+      {
+       "text": "규칙으로는 풀기 어려운 문제 — 음성 인식",
+       "level": 0,
+       "line": 55
+      },
+      {
+       "text": "환경이 계속 변하는 문제 — 재훈련으로 적응",
+       "level": 0,
+       "line": 56
+      },
+      {
+       "text": "대량 데이터에서 통찰을 얻는 문제 — 데이터 마이닝",
+       "level": 0,
+       "line": 57
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "교재 1.3의 응용 사례는 교통 분야 예시로 바꿔 든다.",
+       "line": 58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "머신러닝 시스템의 종류",
+     "line": 60,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.1 세 개의 축",
+     "line": 62,
+     "prefix": "2.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "훈련 지도 방식 — 레이블이 있는가",
+       "level": 0,
+       "line": 63
+      },
+      {
+       "text": "학습 시점 — 한 번에 학습하는가, 점진적으로 하는가",
+       "level": 0,
+       "line": 64
+      },
+      {
+       "text": "일반화 방식 — 사례를 비교하는가, 식으로 요약하는가",
+       "level": 0,
+       "line": 65
+      },
+      {
+       "text": "세 축은 조합 — 하나를 골라도 나머지는 정해지지 않음",
+       "level": 0,
+       "line": 66
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "학생들이 트리 구조로 오해하기 쉬운 지점. 조합 가능한 좌표축이라고 못 박는다.",
+       "line": 67
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.2 훈련 지도 방식",
+     "line": 69,
+     "prefix": "2.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "지도 학습: 정답 레이블이 있는 데이터로 학습",
+       "level": 0,
+       "line": 70
+      },
+      {
+       "text": "분류(스팸 여부)와 회귀(속도·가격)",
+       "level": 1,
+       "line": 71
+      },
+      {
+       "text": "비지도 학습: 레이블 없이 구조를 발견",
+       "level": 0,
+       "line": 72
+      },
+      {
+       "text": "군집, 차원 축소, 이상치 탐지",
+       "level": 1,
+       "line": 73
+      },
+      {
+       "text": "준지도: 일부만 레이블 / 자기 지도: 레이블을 스스로 생성",
+       "level": 0,
+       "line": 74
+      },
+      {
+       "text": "강화 학습: 보상 신호로 정책 학습 — 알파고",
+       "level": 0,
+       "line": 75
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "특성·예측 변수·속성은 같은 말. 로지스틱 '회귀'는 이름과 달리 분류기.",
+       "line": 76
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.3 배치 학습과 온라인 학습",
+     "line": 78,
+     "prefix": "2.3 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "배치 학습: 전체 데이터로 한 번에 훈련한 뒤 배포",
+       "level": 0,
+       "line": 79
+      },
+      {
+       "text": "새 데이터가 쌓이면 처음부터 다시 훈련",
+       "level": 1,
+       "line": 80
+      },
+      {
+       "text": "온라인 학습: 미니배치로 점진적 훈련",
+       "level": 0,
+       "line": 81
+      },
+      {
+       "text": "학습률이 높으면 과거를 빨리 잊음",
+       "level": 1,
+       "line": 82
+      },
+      {
+       "text": "모델 부패와 데이터 드리프트 — 성능은 시간이 지나며 떨어짐",
+       "level": 0,
+       "line": 83
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "외부 메모리 학습은 이름과 달리 보통 오프라인 실행. 나쁜 데이터 주입 위험은 구두로.",
+       "line": 84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "kind": "본문+코드",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.4 사례 기반과 모델 기반",
+     "line": 86,
+     "prefix": "2.4 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "모델 기반: 경향을 식으로 요약한 뒤 예측",
+       "level": 0,
+       "line": 87
+      },
+      {
+       "text": "사례 기반: 가까운 이웃과 비교해 예측",
+       "level": 0,
+       "line": 88
+      },
+      {
+       "text": "사이킷런에서는 클래스 이름만 바꾸면 교체",
+       "level": 0,
+       "line": 89
+      }
+     ]
+    },
+    {
+     "role": "code",
+     "ph": 103,
+     "items": [
+      {
+       "text": "import pandas as pd",
+       "line": 92
+      },
+      {
+       "text": "from sklearn.linear_model import LinearRegression",
+       "line": 93
+      },
+      {
+       "text": "",
+       "line": 94
+      },
+      {
+       "text": "df = pd.read_csv(\"lifesat.csv\")   # 1인당 GDP, 삶의 만족도",
+       "line": 95
+      },
+      {
+       "text": "X = df[[\"gdp_per_capita\"]].values",
+       "line": 96
+      },
+      {
+       "text": "y = df[\"life_satisfaction\"].values",
+       "line": 97
+      },
+      {
+       "text": "",
+       "line": 98
+      },
+      {
+       "text": "model = LinearRegression()        # 모델 기반",
+       "line": 99
+      },
+      {
+       "text": "model.fit(X, y)",
+       "line": 100
+      },
+      {
+       "text": "print(model.predict([[37_655.2]]))       # (결과) [[6.30]]",
+       "line": 101
+      },
+      {
+       "text": "",
+       "line": 102
+      },
+      {
+       "text": "from sklearn.neighbors import KNeighborsRegressor",
+       "line": 103
+      },
+      {
+       "text": "model = KNeighborsRegressor(n_neighbors=3)   # 사례 기반",
+       "line": 104
+      },
+      {
+       "text": "model.fit(X, y)",
+       "line": 105
+      },
+      {
+       "text": "print(model.predict([[37_655.2]]))       # (결과) [[6.33]]",
+       "line": 106
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "OECD 삶의 만족도 예제. '모델'의 세 가지 의미(종류·구조·훈련 결과)는 시험 단골.",
+       "line": 108
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "주요 도전 과제",
+     "line": 110,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "3.1 나쁜 데이터의 네 가지",
+     "line": 112,
+     "prefix": "3.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "양 부족 — 문제가 복잡할수록 필요한 데이터 증가",
+       "level": 0,
+       "line": 113
+      },
+      {
+       "text": "대표성 없음 — 1936년 미국 대선 여론조사의 표본 편향",
+       "level": 0,
+       "line": 114
+      },
+      {
+       "text": "샘플링 잡음은 양의 문제, 샘플링 편향은 방법의 문제",
+       "level": 1,
+       "line": 115
+      },
+      {
+       "text": "품질 낮음 — 오류·이상치·결측의 정제",
+       "level": 0,
+       "line": 116
+      },
+      {
+       "text": "관련 없는 특성 — 특성 공학으로 대응",
+       "level": 0,
+       "line": 117
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "토론거리: 특정 도로에 몰린 관측치로 지역 전체를 설명할 수 있는가.",
+       "line": 118
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "kind": "본문+그림",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "3.2 과대적합과 과소적합",
+     "line": 120,
+     "prefix": "3.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "너무 단순 — 과소적합",
+       "level": 0,
+       "line": 121
+      },
+      {
+       "text": "너무 복잡 — 과대적합",
+       "level": 0,
+       "line": 122
+      },
+      {
+       "text": "잡음까지 외운 결과",
+       "level": 0,
+       "line": 123
+      },
+      {
+       "text": "진단은 훈련·검증 오차의 격차",
+       "level": 0,
+       "line": 124
+      }
+     ]
+    },
+    {
+     "role": "caption",
+     "ph": 104,
+     "text": "그림 1. 모델 복잡도에 따른 과소적합과 과대적합 (합성 데이터)",
+     "line": 126,
+     "prefix": "그림 1. ",
+     "image": "fig_fit.png"
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "학생이 가장 오래 헷갈리는 지점. 다음 장에서 처방으로 넘어간다.",
+       "line": 127
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "3.3 규제와 하이퍼파라미터",
+     "line": 129,
+     "prefix": "3.3 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "규제: 모델의 자유도에 제약을 걸어 과대적합을 줄임",
+       "level": 0,
+       "line": 130
+      },
+      {
+       "text": "규제 강도는 훈련으로 정해지지 않음 — 하이퍼파라미터",
+       "level": 0,
+       "line": 131
+      },
+      {
+       "text": "모델 파라미터는 훈련으로 정해지는 값",
+       "level": 0,
+       "line": 132
+      },
+      {
+       "text": "과소적합의 처방은 반대 — 더 복잡한 모델, 더 나은 특성",
+       "level": 0,
+       "line": 133
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "파라미터와 하이퍼파라미터의 구분은 4주차 규제에서 수식으로 다시 나온다.",
+       "line": 134
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "테스트와 검증",
+     "line": 136,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "4.1 일반화 성능의 측정",
+     "line": 138,
+     "prefix": "4.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "일반화 성능은 새 데이터로만 측정 — 훈련과 테스트를 분리",
+       "level": 0,
+       "line": 139
+      },
+      {
+       "text": "훈련 오차가 낮아도 일반화 오차가 크면 과대적합",
+       "level": 0,
+       "line": 140
+      },
+      {
+       "text": "관례: 훈련 80% · 테스트 20%",
+       "level": 0,
+       "line": 141
+      },
+      {
+       "text": "테스트 세트는 마지막에 한 번만 사용",
+       "level": 0,
+       "line": 142
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "일반화 오차는 외부 샘플 오차라고도 부른다.",
+       "line": 143
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "4.2 검증 세트와 교차 검증",
+     "line": 145,
+     "prefix": "4.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "테스트로 모델을 고르면 테스트에 과대적합",
+       "level": 0,
+       "line": 146
+      },
+      {
+       "text": "선택과 튜닝에 쓸 검증 세트를 따로 확보",
+       "level": 1,
+       "line": 147
+      },
+      {
+       "text": "검증 세트가 작으면 평가가 불안정",
+       "level": 0,
+       "line": 148
+      },
+      {
+       "text": "교차 검증으로 여러 번 나눠 평균",
+       "level": 1,
+       "line": 149
+      },
+      {
+       "text": "훈련·검증·테스트의 역할은 서로 바뀌지 않음",
+       "level": 0,
+       "line": 150
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "검증 세트는 개발 세트라고도 부른다. 공짜 점심 없음 정리는 구두로만.",
+       "line": 151
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "kind": "본문+그림",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "4.3 데이터를 나누는 방식",
+     "line": 153,
+     "prefix": "4.3 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "무작위 분할: 시기가 섞임",
+       "level": 0,
+       "line": 154
+      },
+      {
+       "text": "시간 순서 분할: 과거로 학습",
+       "level": 0,
+       "line": 155
+      },
+      {
+       "text": "시간 정보가 있으면 후자",
+       "level": 0,
+       "line": 156
+      },
+      {
+       "text": "무작위 분할은 성능 과대평가",
+       "level": 0,
+       "line": 157
+      }
+     ]
+    },
+    {
+     "role": "caption",
+     "ph": 104,
+     "text": "그림 2. 시간 순서 분할과 무작위 분할의 구조 차이",
+     "line": 159,
+     "prefix": "그림 2. ",
+     "image": "fig_split.png"
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "학기 내내 반복될 주제. 5주차 실습과 팀 프로젝트에서 데이터 누수로 다시 나온다.",
+       "line": 160
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "정리",
+     "line": 162,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "5.1 오늘의 요약",
+     "line": 164,
+     "prefix": "5.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "머신러닝: 규칙을 데이터에서 찾는 방법",
+       "level": 0,
+       "line": 165
+      },
+      {
+       "text": "시스템은 세 축의 조합 — 지도 방식, 학습 시점, 일반화 방식",
+       "level": 0,
+       "line": 166
+      },
+      {
+       "text": "과대적합과 과소적합은 복잡도의 양쪽 끝, 규제로 조절",
+       "level": 0,
+       "line": 167
+      },
+      {
+       "text": "성능 확인은 새 데이터로만 — 훈련·검증·테스트의 분리",
+       "level": 0,
+       "line": 168
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "목표 세 가지를 다시 확인하고 마무리한다.",
+       "line": 169
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "5.2 이번 주 할 일",
+     "line": 171,
+     "prefix": "5.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "수요일 실습: 09-09 12:00, AI공학관 210호",
+       "level": 0,
+       "line": 172
+      },
+      {
+       "text": "GitHub 계정과 AI 코딩 도구 설치, 노트북 지참",
+       "level": 1,
+       "line": 173
+      },
+      {
+       "text": "교재 1장 읽기 — 오늘 다룬 절 중심",
+       "level": 0,
+       "line": 174
+      },
+      {
+       "text": "다음 주: End-to-End 프로젝트 (핸즈온 Ch2)",
+       "level": 0,
+       "line": 175
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "과제는 5주차에 배포한다. 2~4주차는 이론과 실습에 집중한다.",
+       "line": 176
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "kind": "마무리",
+   "fields": [
+    {
+     "role": "meta",
+     "key": "closing",
+     "ph": 100,
+     "text": "감사합니다",
+     "line": 9
+    },
+    {
+     "role": "meta",
+     "key": "closing_sub",
+     "ph": 101,
+     "text": "다음 주 — End-to-End 프로젝트 (핸즈온 Ch2)",
+     "line": 10
+    },
+    {
+     "role": "meta",
+     "key": "contact",
+     "ph": 102,
+     "text": "jihoyeo@gachon.ac.kr · 오피스 아워 수 17:00–20:00",
+     "line": 7
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,454 @@
+{
+ "version": 1,
+ "markdown": "lab.md",
+ "pptx": "AI모빌리티_02_실습_개발환경.pptx",
+ "md_sha256": "6c996f96ec1451bb97a3831a83ae3d642c97bab7df6111a19b1480718ebff2c8",
+ "pptx_sha256": "62a71e4e8ddc8135b2347536ac1ae4ff01dc283d349ebdb8f8fb50b448062ae9",
+ "slide_count": 13,
+ "slides": [
+  {
+   "index": 0,
+   "kind": "표지",
+   "fields": [
+    {
+     "role": "meta",
+     "key": "course",
+     "ph": 100,
+     "text": "AI 모빌리티 · 가천대학교 스마트시티학과",
+     "line": 1
+    },
+    {
+     "role": "meta",
+     "key": "week",
+     "ph": 101,
+     "text": "2주차 실습",
+     "line": 2
+    },
+    {
+     "role": "meta",
+     "key": "title",
+     "ph": 102,
+     "text": "개발 환경과 AI 코딩 도구",
+     "line": 3
+    },
+    {
+     "role": "meta",
+     "key": "subtitle",
+     "ph": 103,
+     "text": "설치, 첫 실행, 결과 확인",
+     "line": 4
+    },
+    {
+     "role": "meta",
+     "key": "presenter",
+     "ph": 104,
+     "text": "여지호 교수 · 스마트시티학과",
+     "line": 5
+    },
+    {
+     "role": "meta",
+     "key": "date",
+     "ph": 105,
+     "text": "2026년 9월 9일 (수)",
+     "line": 6
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "kind": "목차",
+   "fields": []
+  },
+  {
+   "index": 2,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "오늘 할 일",
+     "line": 24,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "1.1 실습 순서",
+     "line": 26,
+     "prefix": "1.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "GitHub 계정 생성 — 과제 제출에도 사용",
+       "level": 0,
+       "line": 27
+      },
+      {
+       "text": "Antigravity 설치와 로그인 (Google 계정)",
+       "level": 0,
+       "line": 28
+      },
+      {
+       "text": "Codex 설치와 로그인 — 막히면 웹 버전",
+       "level": 0,
+       "line": 29
+      },
+      {
+       "text": "pandas 첫 실행 — 3주차에 쓸 교재 데이터",
+       "level": 0,
+       "line": 30
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "50분. 설치에서 막히는 학생이 반드시 나오므로 순서대로 확인하며 진행한다.",
+       "line": 31
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "도구",
+     "line": 33,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.1 사용할 도구",
+     "line": 35,
+     "prefix": "2.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "에디터: Google Antigravity — VS Code 기반, 에이전트 내장",
+       "level": 0,
+       "line": 36
+      },
+      {
+       "text": "코딩 에이전트: OpenAI Codex — 터미널과 웹에서 사용",
+       "level": 0,
+       "line": 37
+      },
+      {
+       "text": "대비책: Google Colab — 설치 없이 브라우저에서 실행",
+       "level": 0,
+       "line": 38
+      },
+      {
+       "text": "분석: Python, pandas, scikit-learn",
+       "level": 0,
+       "line": 39
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "셋 다 무료 플랜으로 시작. 한도가 자주 바뀌므로 과제는 한도를 전제하지 않는다.",
+       "line": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "2.2 파이썬 문법 학습 방식",
+     "line": 42,
+     "prefix": "2.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "별도 문법 강의 없음 — 필요한 시점에 도구로 해결",
+       "level": 0,
+       "line": 43
+      },
+      {
+       "text": "확보한 시간은 결과를 확인하는 훈련에 배분",
+       "level": 0,
+       "line": 44
+      },
+      {
+       "text": "배열 연산은 6주차 신경망 구현에서 별도 설명",
+       "level": 0,
+       "line": 45
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "파이썬이 처음인 학생도 오늘부터 바로 시작할 수 있게 한다.",
+       "line": 46
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "첫 실행",
+     "line": 48,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "kind": "본문+코드",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "3.1 pandas로 데이터 읽기",
+     "line": 50,
+     "prefix": "3.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "3주차 End-to-End에서 쓸 교재 데이터로 미리 연습",
+       "level": 0,
+       "line": 51
+      }
+     ]
+    },
+    {
+     "role": "code",
+     "ph": 103,
+     "items": [
+      {
+       "text": "import pandas as pd",
+       "line": 54
+      },
+      {
+       "text": "",
+       "line": 55
+      },
+      {
+       "text": "base = \"https://raw.githubusercontent.com/ageron/data/main\"",
+       "line": 56
+      },
+      {
+       "text": "df = pd.read_csv(f\"{base}/housing/housing.csv\")",
+       "line": 57
+      },
+      {
+       "text": "",
+       "line": 58
+      },
+      {
+       "text": "print(df.shape)                          # (결과) (20640, 10)",
+       "line": 59
+      },
+      {
+       "text": "print(df[\"median_house_value\"].mean())   # (결과) 206855.82",
+       "line": 60
+      },
+      {
+       "text": "print(df.isna().sum().sum())             # (결과) 207",
+       "line": 61
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "두 도구에 같은 요청을 넣고 결과가 같은지 본다. 값이 다르면 그 자리에서 원인을 찾는다.",
+       "line": 63
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "3.2 AI 코드 확인 항목",
+     "line": 65,
+     "prefix": "3.2 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "행 수: 읽어들인 결과가 원본과 일치하는가",
+       "level": 0,
+       "line": 66
+      },
+      {
+       "text": "결측: 삭제인지 대체인지, 대체면 어떤 값인지",
+       "level": 0,
+       "line": 67
+      },
+      {
+       "text": "필터: 조건이 의도한 범위와 일치하는가",
+       "level": 0,
+       "line": 68
+      },
+      {
+       "text": "확인 없이 넘어간 코드가 오차의 출처",
+       "level": 0,
+       "line": 69
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "코드를 쓰는 시간보다 확인하는 시간이 길어지는 것이 정상이다.",
+       "line": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "kind": "섹션",
+   "fields": [
+    {
+     "role": "section",
+     "ph": 101,
+     "text": "마무리",
+     "line": 72,
+     "marker": "# "
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "kind": "본문",
+   "fields": [
+    {
+     "role": "title",
+     "ph": 100,
+     "text": "4.1 오늘 확인할 것",
+     "line": 74,
+     "prefix": "4.1 ",
+     "marker": "## "
+    },
+    {
+     "role": "bullets",
+     "ph": 102,
+     "items": [
+      {
+       "text": "세 패키지 import 성공 — pandas, numpy, scikit-learn",
+       "level": 0,
+       "line": 75
+      },
+      {
+       "text": "데이터 20,640행을 읽고 요약 통계 출력",
+       "level": 0,
+       "line": 76
+      },
+      {
+       "text": "두 도구 모두에서 같은 결과 확인",
+       "level": 0,
+       "line": 77
+      },
+      {
+       "text": "결측 207개를 어떻게 처리할지 도구에 물어보기",
+       "level": 0,
+       "line": 78
+      }
+     ]
+    },
+    {
+     "role": "notes",
+     "items": [
+      {
+       "text": "막힌 학생은 Colab으로 전환하고 다음 주까지 로컬 환경을 정리한다.",
+       "line": 79
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "kind": "마무리",
+   "fields": [
+    {
+     "role": "meta",
+     "key": "closing",
+     "ph": 100,
+     "text": "다음 주 실습에서 이어서",
+     "line": 9
+    },
+    {
+     "role": "meta",
+     "key": "closing_sub",
+     "ph": 101,
+     "text": "End-to-End 프로젝트 노트북 (핸즈온 Ch2)",
+     "line": 10
+    },
+    {
+     "role": "meta",
+     "key": "contact",
+     "ph": 102,
+     "text": "jihoyeo@gachon.ac.kr · 오피스 아워 수 17:00–20:00",
+     "line": 7
+    }
+   ]
+  }
+ ]
+}
