@@ -64,9 +64,9 @@ AI가 만든 코드에서 학생이 확인할 것은 세 가지다.
 > 무료 사용량 한도는 자주 바뀐다. Antigravity는 출시 한 달 만에 일일 요청 한도가 250회에서 20회로 줄었다.
 > 과제는 특정 한도를 전제하지 않도록 설계하고, 한도가 소진된 학생도 마칠 수 있게 한다.
 
-설치 안내 슬라이드는 스마트 교통물류 과목과 공용이다.
-원본은 `../smart-transport-logistics/slides/common/dev_env.md` 이고 60분 분량이다.
-이 과목 실습은 50분이므로 나눠서 진행하거나 필요한 절만 골라 쓴다.
+설치 안내 슬라이드는 스마트 교통물류 과목과 공용이고 `slides/common/dev_env.md` 에 있다.
+60~75분 분량이라 이 과목의 50분 실습에는 나눠서 진행하거나 필요한 절만 골라 쓴다.
+편집기와 파이썬, 도구 3종 설치, 권한 모드, 명령어와 토큰 관리, 병렬 실행 순서다.
 
 ---
 
@@ -104,7 +104,8 @@ HW2에서 전체 데이터를 다룬다.
 
 강의노트:
 
-- [머신러닝 개요(2주차)와 End-to-End 프로젝트(3주차)](materials/handson-ml/week03_ch01_ch02.md)
+- [2주차 — 머신러닝 개요](materials/handson-ml/week02_ch01.md)
+- [3주차 — 머신러닝 프로젝트 처음부터 끝까지](materials/handson-ml/week03_ch02.md)
 - [4주차 — 분류 평가와 모델 훈련](materials/handson-ml/week04_ch03_ch04.md)
 - [5주차 — 결정 트리와 앙상블 학습](materials/handson-ml/week05_ch06_ch07.md)
 
