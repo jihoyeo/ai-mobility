@@ -18,7 +18,7 @@ toc_label: 공용 세션
 시간: 60~75분 독립 세션 → 본문 26장. 설치는 슬라이드를 화면에 표시한 상태로 각자 진행
 메시지: 편집기와 AI 코딩 도구를 설치하고, 권한을 어디까지 열지 정한 뒤 결과와 기록을 직접 관리한다
 목표: (1) VS Code와 파이썬 설치·확인 (2) AI 코딩 도구 3종 설치와 로그인 (3) 권한 모드 세 단계와 사용 조건 (4) 명령어와 md 기록으로 맥락·사용량 관리
-출처: 각 도구 공식 문서(2026-09 확인) · AI 모빌리티 2주차 덱의 AI 코드 확인 항목
+출처: 각 도구 공식 문서(2026-09-08 확인) — Antigravity CLI는 antigravity.google/docs/cli의 install·using·reference 페이지
 공용: 스마트 교통물류와 AI 모빌리티 두 과목이 같은 파일을 쓴다. 과목 고유 정보(교재 장 번호, 과제 번호, 데이터 이름)는 넣지 않는다
 빌드: ~/miniconda3/bin/python3 ~/.claude/skills/md2pptx/scripts/md2pptx.py slides/common/dev_env.md
 -->
@@ -90,11 +90,11 @@ toc_label: 공용 세션
 
 ![편집기와 터미널 에이전트가 같은 프로젝트 폴더를 고치고, Orca는 에이전트별로 폴더를 나눈다](figures/tools_landscape.png)
 
-- 편집기: 사람이 코드를 보고 고치는 곳
-- 터미널 에이전트: 지시를 받아 파일을 직접 고치는 프로그램
+- 편집기: 사람이 코드를 보고 고치는 곳 — VS Code, Antigravity
+- 터미널 에이전트: 지시를 받아 파일을 직접 고치는 프로그램 — claude, codex, agy
 - 공통 작업 대상: 하나의 프로젝트 폴더
 
-> 편집기에서는 사용자가 코드를 직접 읽고 수정합니다. 터미널 에이전트는 사용자의 지시에 따라 파일을 수정하고 명령을 실행합니다. 두 도구 모두 같은 프로젝트 폴더를 대상으로 작업합니다. 그림 오른쪽의 Orca는 마지막에 용도만 소개합니다.
+> 편집기에서는 사용자가 코드를 직접 읽고 수정합니다. 터미널 에이전트는 사용자의 지시에 따라 파일을 수정하고 명령을 실행합니다. Antigravity는 편집기와 터미널 에이전트 양쪽으로 제공되어 두 칸에 모두 들어갑니다. 그림 오른쪽의 Orca는 마지막에 용도만 소개합니다.
 
 ## Claude Code 설치
 
@@ -117,14 +117,25 @@ toc_label: 공용 세션
 
 > Codex 공식 설치 프로그램을 사용하면 Node.js를 별도로 설치할 필요가 없습니다. 설치 후 프로젝트 폴더에서 codex를 실행하고, 처음 나타나는 화면에서 로그인 방법을 선택합니다.
 
-## Antigravity 설치
+## Antigravity 편집기 설치
 
 - 내려받기: antigravity.google/download
 - 요건: Windows 10 64비트 이상 · macOS 12 이상(Apple Silicon·Intel) · Linux
 - 로그인: 구글 계정 · 인터넷 연결 필요
 - 구조: VS Code 기반 — 확장과 단축키 대부분 동일
 
-> Antigravity는 편집기 안에서 에이전트를 사용하는 형태입니다. 터미널 사용이 익숙하지 않은 학생은 이 도구로 시작할 수 있습니다. macOS용 설치 파일은 Apple Silicon과 Intel을 구분해 제공하므로 자신의 기기에 맞는 파일을 선택합니다.
+> Antigravity는 편집기와 터미널 CLI 두 가지 형태로 제공되고, 둘 중 하나만 설치해도 됩니다. 편집기는 화면 안에서 에이전트를 사용하는 형태여서 터미널이 익숙하지 않은 학생이 시작하기 쉽습니다. macOS용 설치 파일은 Apple Silicon과 Intel을 구분해 제공하므로 자신의 기기에 맞는 파일을 선택합니다.
+
+## Antigravity CLI 설치
+
+- 설치 명령
+  - Windows PowerShell: irm https://antigravity.google/cli/install.ps1 | iex
+  - macOS·Linux: curl -fsSL https://antigravity.google/cli/install.sh | bash
+- 확인: agy --version → 버전 번호 출력
+- 첫 실행: 프로젝트 폴더에서 agy 입력 → 구글 계정으로 브라우저 로그인
+- 위치: Claude Code, Codex와 같은 터미널 에이전트
+
+> 명령 이름은 agy입니다. macOS와 Linux는 홈 폴더 아래 .local/bin에 설치되므로 agy 명령을 찾지 못하면 PATH에 이 경로가 있는지 확인합니다. Node.js는 필요하지 않습니다.
 
 ## 계정과 사용 한도
 
@@ -150,7 +161,7 @@ toc_label: 공용 세션
 - 첫 확인: 현재 경로와 파일 목록을 먼저 출력
 - 주의 사항: 홈 폴더나 바탕화면에서 실행하지 않기
 
-> 에이전트를 잘못된 폴더에서 실행하면 의도하지 않은 파일을 수정할 수 있습니다. 작업을 시작할 때 현재 경로와 파일 목록을 먼저 확인합니다.
+> 에이전트를 잘못된 폴더에서 실행하면 의도하지 않은 파일을 수정할 수 있습니다. 작업을 시작할 때 현재 경로와 파일 목록을 먼저 확인합니다. 여기서 각자 한 번 실행해 보고, 설치를 마친 학생은 파이썬 버전과 설치된 패키지를 점검하도록 지시해 봅니다.
 
 ## 권한 모드 세 단계
 
@@ -159,31 +170,32 @@ toc_label: 공용 세션
 |---|---|---|---|
 | Claude Code | 기본 모드 | acceptEdits | bypassPermissions |
 | Codex | ask-for-approval | full-auto | yolo |
-| Antigravity | Request Review | Proceed in Sandbox | Always Proceed |
+| Antigravity 편집기 | Request Review | Proceed in Sandbox | Always Proceed |
+| Antigravity CLI | 기본 모드 | /permissions에서 지정 | 시작 옵션으로 지정 |
 
-- 전환 방법: Claude Code는 Shift+Tab · Codex는 /approvals · Antigravity는 설정 화면
-- 시작 옵션: claude --dangerously-skip-permissions · codex --yolo
+- 전환 방법: Claude Code는 Shift+Tab · Codex는 /approvals · Antigravity CLI는 /permissions
+- 전면 자동 시작 옵션: claude --dangerously-skip-permissions · codex --yolo · agy --dangerously-skip-permissions
 - 계획 우선 실행: Claude Code의 plan 모드는 파일을 수정하지 않고 계획만 제시
 
 > Claude Code에서 Shift+Tab을 누르면 기본, acceptEdits, plan, bypassPermissions 순서로 전환되고 현재 모드가 화면 아래에 표시됩니다. 수업에서는 plan 모드로 계획을 확인한 뒤 실행 단계로 넘어가는 순서를 권장합니다.
 
+## Git 커밋과 복구
+
+- Git: 폴더 안의 파일이 언제 어떻게 바뀌었는지 이력으로 저장하는 도구
+- 커밋: 그 시점의 파일 상태를 이력에 기록 — 되돌아갈 지점
+- 되돌리기: git restore로 마지막 커밋 상태로 복구
+- 변경 확인: git diff로 커밋 이후 바뀐 부분만 표시
+
+> 에이전트가 파일 수십 개를 한 번에 고쳐도, 커밋해 둔 지점이 있으면 그 상태로 되돌릴 수 있습니다. 커밋하지 않은 상태에서 덮어쓴 파일은 편집기의 실행 취소로 복구되지 않습니다. Git 사용법은 실습에서 이어서 다루고, 오늘은 에이전트를 실행하기 전에 커밋한다는 순서만 정합니다.
+
 ## 전면 자동을 쓰는 조건
 
-- 조건 1: Git 저장소이고 직전 작업까지 커밋된 상태
-- 조건 2: 과제나 실습 폴더 — 개인 자료와 자격증명이 없는 위치
-- 조건 3: 결과 확인 방법을 미리 정해 둔 경우
+- 커밋된 Git 저장소: 잘못 고친 파일을 직전 커밋으로 되돌릴 수 있음
+- 과제나 실습 폴더: 개인 자료와 자격증명이 없어 잘못 열려도 피해 없음
+- 결과 확인 방법이 정해진 상태: 승인을 건너뛴 만큼 사후 확인이 필요
 - 제외 대상: 홈 폴더, 연구실 공용 저장소, 자격증명이 있는 폴더
 
-> 전면 자동은 확인을 생략하는 기능이 아니라 확인 시점을 뒤로 옮기는 기능입니다. 커밋하지 않은 상태에서 사용하면 잘못된 수정을 복구하기 어렵습니다. 커밋한 뒤에 실행하고, 작업이 끝나면 git diff로 변경 내용을 확인합니다.
-
-## 첫 지시 문장
-
-- 지시 예시: requirements.txt로 가상환경 생성과 설치 · 실패 시 오류 원문과 원인 보고
-- 오류 전달 방식: 화면 캡처 대신 터미널 출력 원문
-- 작업 단위: 설치와 분석을 한 지시에 섞지 않고 하나씩 요청
-- 실행 전 확인: 수정할 파일과 실행할 명령을 먼저 설명하도록 요청
-
-> 각자 에이전트에게 한 번 지시해 봅니다. 설치를 이미 마친 학생은 파이썬 버전과 설치된 패키지를 점검하도록 요청합니다. 지시에는 작업 목적과 실패했을 때 보고할 내용을 포함하면 충분합니다.
+> 전면 자동은 확인을 생략하는 기능이 아니라 확인 시점을 뒤로 옮기는 기능입니다. 세 조건은 모두 되돌릴 수 있는 상태를 만드는 데 목적이 있습니다. 작업이 끝나면 git diff로 변경 내용을 확인하고, 의도와 다르면 git restore로 되돌립니다.
 
 ## 에이전트가 판단할 수 없는 것
 
@@ -194,32 +206,23 @@ toc_label: 공용 세션
 
 > 평가에서는 어떤 도구를 사용했는지보다 결과를 설명하고 검증할 수 있는지를 확인합니다. 작성한 코드와 분석 결과를 설명하지 못하면 제출물의 타당성을 평가할 수 없습니다.
 
-# 확인과 기록
-
-## 결과 확인 항목
-
-- 행 수: 읽어들인 결과가 원본 파일과 일치
-- 결측: 삭제인지 대체인지, 대체면 어떤 값인지
-- 필터: 조건이 의도한 범위와 일치
-- 검증하지 않은 코드: 이후 오차의 원인이 될 가능성
-
-> 코드 작성 뒤에는 원본 행 수, 결측 처리, 필터 범위를 차례로 확인합니다. 두 과목의 과제에서도 이 검증 과정을 평가합니다.
+# 명령과 기록
 
 ## 자주 쓰는 명령
 
 표: 목적별 명령 대응
-| 목적 | Claude Code | Codex |
-|---|---|---|
-| 모델·추론 강도 변경 | /model | /model |
-| 대화 비우기 | /clear | /new |
-| 대화 압축 | /compact | /compact |
-| 규칙 파일 생성 | /init → CLAUDE.md | /init → AGENTS.md |
+| 목적 | Claude Code | Codex | Antigravity |
+|---|---|---|---|
+| 모델·추론 강도 변경 | /model | /model | /model |
+| 대화 비우기 | /clear | /new | /clear |
+| 대화 압축 | /compact | /compact | 미지원 |
+| 규칙 파일 생성 | /init → CLAUDE.md | /init → AGENTS.md | 미지원 |
 
-- 사용량 확인: Claude Code는 /context와 /usage · Codex는 /status
-- 변경 취소: Claude Code는 /rewind · 공통으로 git diff와 git restore
-- 이전 작업 이어가기: claude --continue 또는 claude --resume
+- 사용량 확인: Claude Code와 Antigravity는 /context와 /usage · Codex는 /status
+- 변경 취소: Claude Code와 Antigravity는 /rewind · 공통으로 git diff와 git restore
+- 이전 작업 이어가기: claude --continue · agy는 /resume
 
-> 전체 명령 목록은 /help로 확인할 수 있습니다. 이번 시간에는 표의 네 가지를 먼저 익히고, 나머지는 필요할 때 찾아 쓰도록 안내합니다.
+> 전체 명령 목록은 Claude Code와 Codex에서 /help, Antigravity에서 물음표 하나로 확인할 수 있습니다. 표의 미지원 두 칸은 2026년 9월 공식 문서 기준이므로 학기 중에 추가될 수 있습니다.
 
 ## 대화를 비우는 기준
 
@@ -276,7 +279,7 @@ toc_label: 공용 세션
 | 파이썬과 가상환경 | python --version · pip list | 3.11.x와 패키지 목록 |
 | Claude Code | claude --version | 버전 번호 |
 | Codex | codex --version | 버전 번호 |
-| Antigravity | 앱 실행 | 구글 계정 로그인 상태 |
+| Antigravity | agy --version 또는 앱 실행 | 버전 번호 또는 로그인 상태 |
 
 - 완료 기준: 네 항목 모두 정상 동작
 - 미완료 항목: 오류 원문을 단톡방에 공유
@@ -286,9 +289,9 @@ toc_label: 공용 세션
 ## 개발 환경 정리
 
 - 환경: VS Code · 파이썬 3.11 · 가상환경 · 에이전트 3종
+- 실행: 프로젝트 폴더에서 claude · codex · agy
 - 권한: 커밋으로 되돌릴 수 있는 폴더에서만 전면 자동 사용
 - 관리: 작업 단위로 /clear · 결정과 절차는 md 파일에 기록
-- 확인: 행 수, 결측 처리, 필터 범위, 검증하지 않은 코드
 
 > 처음에 제시한 네 가지 학습 목표를 다시 확인합니다. 설치하지 못한 항목은 오피스 아워에서 이어서 진행하도록 안내합니다.
 
