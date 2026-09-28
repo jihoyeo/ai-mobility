@@ -97,6 +97,14 @@
 - 핸즈온 머신러닝 3판: [https://github.com/rickiepark/handson-ml3](https://github.com/rickiepark/handson-ml3)
 - 밑바닥부터 시작하는 딥러닝 1: [https://github.com/WegraLee/deep-learning-from-scratch](https://github.com/WegraLee/deep-learning-from-scratch)
 
+두 저장소는 강의 자료에 포함하지 않는다. 각자 작업 폴더에서 직접 클론해서 쓴다.
+실습 중 수정한 노트북은 본인 컴퓨터에만 남으므로, 다른 컴퓨터에서 이어서 작업하려면 따로 백업한다.
+
+```
+git clone https://github.com/rickiepark/handson-ml3
+git clone https://github.com/WegraLee/deep-learning-from-scratch
+```
+
 ### 실습 도구
 
 분석: Python, pandas, GeoPandas, scikit-learn, numpy(6~7주차 직접 구현), PyTorch(10주차 이후)
