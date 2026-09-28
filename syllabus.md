@@ -155,3 +155,4 @@ AI 코딩 도구 (2주차 세팅, 학기 내내 사용):
 | 2026-09-15 (3주차) | End-to-End 프로젝트 — 문제 정의, 데이터 탐색, 전처리 파이프라인, 검증, 튜닝 | [Zoom 녹화](https://us06web.zoom.us/rec/share/d34u2ATMnXqzorTOx1bHpnh2yUjG6n3DR88u6hfOekhnG9ACCADZym2x42P9KPLZ.L5Ln927RSPfPWD5i) | `sd.GTH#3` |
 | 2026-09-22 (4주차) | 모델 훈련 — 선형회귀, 경사하강법, 규제, 로지스틱 회귀 | [Zoom 녹화](https://us06web.zoom.us/rec/share/Lwa_HKOnbX8KV2NhOM5zmhzNwm9HifszXFfxdViYNNua71xuaB9Y5-MMq7V7Bdf7.MINtpkOorzHvT0Zy) | `PMCyq^9S` |
 | 2026-09-23 (4주차) | 분류 성능 지표 | [Zoom 녹화](https://us06web.zoom.us/rec/share/evny2veI9Bu0BQbJOdK1aQnDxjfLJvhjzHGTKEjBM0B4UeWQgFzfO0HnOXdGa_L5.42QL6dOKl5Jm3lN3) | `tx09bo?!` |
+| 2026-09-29 (5주차) | 5주차 강의 | [Zoom 녹화](https://us06web.zoom.us/rec/share/FUYfv2RpqBr6c1SuM_um_NvX350IX1JkRSr3gRFVuLLv3Dyu1c3BAvDrvWiOHnOD.XXZIGpet9zpupcmY) | `=@!Pc9kw` |
