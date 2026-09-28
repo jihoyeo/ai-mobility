@@ -142,4 +142,8 @@ AI 코딩 도구 (2주차 세팅, 학기 내내 사용):
 
 | 날짜 | 내용 | 링크 | 암호 |
 |---|---|---|---|
-| 2025-09-08 (2주차) | 머신러닝 개요 — 시스템의 세 축, 과대적합, 검증 | [Zoom 녹화](https://us06web.zoom.us/rec/share/ZyIam_wDUSEccU2yAn836yPs2Rhr9cU1lGtGn2ooxU9uYkzr-Hda9sUtz04TAZk5.GOPd91ZTReej9TXo) | `sd.GTH#3` |
+| 2026-09-08 (2주차) | 머신러닝 개요 — 시스템의 세 축, 과대적합, 검증 | [Zoom 녹화](https://us06web.zoom.us/rec/share/ZyIam_wDUSEccU2yAn836yPs2Rhr9cU1lGtGn2ooxU9uYkzr-Hda9sUtz04TAZk5.GOPd91ZTReej9TXo) | `sd.GTH#3` |
+| 2026-09-09 (2주차) | 개발 환경 세팅 — AI 코딩 도구 설치와 pandas 첫 실행 | [Zoom 녹화](https://us06web.zoom.us/rec/share/yQgEc5lhKVZZA7ONE0KW02yFlmo6UqHTDRrSDgu4-pv0GS5udlG6iFIHI3ubJg5g.MUpnntV-wxLWAR2X) | `TF6oT!2q` |
+| 2026-09-15 (3주차) | End-to-End 프로젝트 — 문제 정의, 데이터 탐색, 전처리 파이프라인, 검증, 튜닝 | [Zoom 녹화](https://us06web.zoom.us/rec/share/d34u2ATMnXqzorTOx1bHpnh2yUjG6n3DR88u6hfOekhnG9ACCADZym2x42P9KPLZ.L5Ln927RSPfPWD5i) | `sd.GTH#3` |
+| 2026-09-22 (4주차) | 모델 훈련 — 선형회귀, 경사하강법, 규제, 로지스틱 회귀 | [Zoom 녹화](https://us06web.zoom.us/rec/share/Lwa_HKOnbX8KV2NhOM5zmhzNwm9HifszXFfxdViYNNua71xuaB9Y5-MMq7V7Bdf7.MINtpkOorzHvT0Zy) | `PMCyq^9S` |
+| 2026-09-23 (4주차) | 분류 성능 지표 | [Zoom 녹화](https://us06web.zoom.us/rec/share/evny2veI9Bu0BQbJOdK1aQnDxjfLJvhjzHGTKEjBM0B4UeWQgFzfO0HnOXdGa_L5.42QL6dOKl5Jm3lN3) | `tx09bo?!` |
