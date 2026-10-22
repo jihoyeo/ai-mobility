@@ -156,3 +156,8 @@ AI 코딩 도구 (2주차 세팅, 학기 내내 사용):
 | 2026-09-22 (4주차) | 모델 훈련 — 선형회귀, 경사하강법, 규제, 로지스틱 회귀 | [Zoom 녹화](https://us06web.zoom.us/rec/share/Lwa_HKOnbX8KV2NhOM5zmhzNwm9HifszXFfxdViYNNua71xuaB9Y5-MMq7V7Bdf7.MINtpkOorzHvT0Zy) | `PMCyq^9S` |
 | 2026-09-23 (4주차) | 분류 성능 지표 | [Zoom 녹화](https://us06web.zoom.us/rec/share/evny2veI9Bu0BQbJOdK1aQnDxjfLJvhjzHGTKEjBM0B4UeWQgFzfO0HnOXdGa_L5.42QL6dOKl5Jm3lN3) | `tx09bo?!` |
 | 2026-09-29 (5주차) | 5주차 강의 | [Zoom 녹화](https://us06web.zoom.us/rec/share/FUYfv2RpqBr6c1SuM_um_NvX350IX1JkRSr3gRFVuLLv3Dyu1c3BAvDrvWiOHnOD.XXZIGpet9zpupcmY) | `=@!Pc9kw` |
+| 2026-09-30 (5주차) | 5주차 강의 - 2 | [Zoom 녹화](https://us06web.zoom.us/rec/share/g5n8fLuP74RG5QZKIbRzr-QBink2RvNo6RKVaIwiK-XOemxGsCVkQKjL-DyHS91v.srjQDFvLZSxvAwVr) | `#1J!0n0I` |
+| 2026-10-06 (6주차) | 6주차 강의 | [Zoom 녹화](https://us06web.zoom.us/rec/share/mWx2ZjVerapY5Bh5eW-yNyebXgMSWqiYy0ewPvHjuzFs2kGazNXFZnPfptOQxotZ.oqinguYbVKd_pQid) | `r7@WT3$v` |
+| 2026-10-13 (7주차) | 7주차 강의 | [Zoom 녹화](https://us06web.zoom.us/rec/share/lzHih9dEYBJuWb1swjCP-S87Z9L7JOi3vyYxrS6Udj5TJir-iZJ2ewdaIpMCgyMJ.aTn_Mo9GKNZaYls4) | `ec3NH%C5` |
+| 2026-10-14 (7주차) | 7주차 강의-2 | [Zoom 녹화](https://us06web.zoom.us/rec/share/CC5T42YQ6SFSOOtFFWDy7FdAKbow_fY2ocvCthKaBwm2kZPOg7nwWqMynwf2K9Zm.dJsAxGLBQDgMQLmZ) | `wdg0!3v^` |
+
